@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9XC3LY02MG"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9XC3LY02MG"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -9,263 +9,549 @@
 
   gtag('config', 'G-9XC3LY02MG');
 </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow">
-    
-    <!-- SEO Meta Tags -->
-    <title>دليل الباركود والمنتجات في السعودية | Coboun</title>
-    <meta name="description" content="البحث عن أسعار وبيانات المنتجات في السعودية عبر الباركود. دليل شامل يضم آلاف المنتجات الاستهلاكية، المواصفات، والصور المحدثة يومياً.">
-    <link rel="canonical" href="https://sa.coboun.com/" />
-    <link rel="icon" type="image/png" href="https://coboun.com/img/icon.png">
-    <!-- Open Graph / Social -->
-    <meta property="og:title" content="دليل الباركود والمنتجات في السعودية | كوبون">
-    <meta property="og:description" content="اعثر على تفاصيل أي منتج من خلال الباركود. أسعار وصور وبيانات دقيقة.">
-    <meta property="og:url" content="https://sa.coboun.com/">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://coboun.com/img/icon.png">
 
-    <!-- Fonts -->
+    <meta charset="UTF-8">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دليل الباركود والمنتجات | Coboun.com</title>
+    <meta name="description" content="دليلك الشامل للتجارة الالكترونية. محرك بحث كوبون يساعدك في العثور على عن بيانات المنتجات، الأسعار، الصور والمواصفات.">
+
+    <meta property="og:title" content="دليل الباركود والمنتجات | coboun.com">
+    <meta property="og:description" content="دليلك الشامل للتجارة الالكترونية. محرك بحث كوبون يساعدك في العثور على عن بيانات المنتجات، الأسعار، الصور والمواصفات.">
+    <meta property="og:image" content="https://coboun.com/img/adcover.jpg">
+    <meta property="og:url" content="https://coboun.com/">
+    <meta property="og:site_name" content="coboun.com">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="دليل الباركود والمنتجات | coboun.com">
+    <meta name="twitter:description" content="دليلك الشامل للتجارة الالكترونية. محرك بحث كوبون يساعدك في العثور على عن بيانات المنتجات، الأسعار، الصور والمواصفات.">
+    <meta name="twitter:image" content="https://coboun.com/img/adcover.jpg">
+    <link rel="icon" type="image/png" href="https://coboun.com/img/icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
-
-    <!-- Google Tag Manager (Global) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9XC3LY02MG"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-9XC3LY02MG');
-    </script>
-
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    
     <style>
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+
+        .logo-img {
+            max-height: 40px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .nav-logo span {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+    </style>
+
+    <script>
+        window.CURRENT_LANGUAGE = 'ar';
+    </script>
+    
+    <style>
+        /* --- Global Variables & Base Styles --- */
         :root {
             --primary-color: #e25a20;
-            --primary-dark: #c44a19;
-            --bg-color: #f8f9fa;
-            --text-main: #2d3436;
-            --text-muted: #636e72;
+            --secondary-color: #2c3e50;
+            --light-gray: #f4f6f9;
+            --dark-gray: #34495e;
             --white: #ffffff;
+            --border-radius: 8px;
+            --box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
+        /* تنسيق صندوق الوصف */
+.description-wrapper {
+    position: relative;
+    margin-bottom: 15px;
+}
 
-        * { box-sizing: border-box; }
-        body {
-            font-family: 'Cairo', sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            margin: 0;
-            line-height: 1.6;
-        }
+.description {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6; /* عدد الأسطر قبل ظهور "اقرأ المزيد" (تقريباً 260 حرف) */
+    line-height: 1.6;
+    transition: all 0.3s ease;
+}
 
-        /* Navigation */
-        nav {
-            background: var(--white);
-            padding: 1rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        .logo {
-            font-size: 1.8rem;
-            font-weight: 800;
-            color: var(--primary-color);
-            text-decoration: none;
-        }
-        .nav-links { display: flex; gap: 20px; align-items: center; }
-        .nav-links a {
-            text-decoration: none;
-            color: var(--text-main);
-            font-weight: 600;
-            transition: color 0.3s;
-        }
-        .nav-links a:hover { color: var(--primary-color); }
+/* عندما يتم النقر على اقرأ المزيد */
+.description.expanded {
+    -webkit-line-clamp: unset;
+    display: block;
+}
 
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, #e25a20 0%, #ff8c52 100%);
-            color: var(--white);
-            padding: 5rem 1rem;
-            text-align: center;
-        }
-        .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; font-weight: 800; }
-        .hero p { font-size: 1.2rem; opacity: 0.9; max-width: 700px; margin: 0 auto 2.5rem; }
+.read-more-btn {
+    color: var(--primary-color);
+    cursor: pointer;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 2px;
+    text-decoration: underline;
+}
 
-        /* Search Bar */
-        .search-container {
-            max-width: 600px;
-            margin: 0 auto;
-            position: relative;
-        }
-        .search-form {
-            display: flex;
-            background: var(--white);
-            padding: 5px;
-            border-radius: 50px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-        }
-        .search-form input {
-            flex: 1;
-            border: none;
-            padding: 15px 25px;
-            border-radius: 50px;
-            font-size: 1.1rem;
-            outline: none;
-            font-family: 'Cairo', sans-serif;
-        }
-        .search-form button {
-            background: var(--primary-color);
-            color: var(--white);
-            border: none;
-            padding: 10px 35px;
-            border-radius: 50px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: background 0.3s;
-            font-size: 1rem;
-        }
-        .search-form button:hover { background: var(--primary-dark); }
+.read-more-btn.hidden {
+    display: none;
+}
+        body { margin: 0; background-color: var(--light-gray); color: var(--dark-gray); line-height: 1.6; font-family: 'Cairo', sans-serif; }
+        .container { max-width: 960px; margin: 0 auto; padding: 0 20px; box-sizing: border-box; }
+        h1, h2, h3, h4, h5 { color: var(--secondary-color); }
+        input, .search-text-desktop { font-size: 16px !important; }
+        input::placeholder, textarea::placeholder { font-size: 16px; }
+        [onclick] { cursor: pointer; }
+        .deo { user-select: none; pointer-events: none; color: var(--secondary-color); cursor: default !important; }
 
-        /* Featured Content */
-        .section {
-            max-width: 1200px;
-            margin: 4rem auto;
-            padding: 0 1rem;
-        }
-        .grid-features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-        .card {
-            background: var(--white);
-            padding: 2.5rem;
-            border-radius: 15px;
-            text-align: center;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
-            transition: transform 0.3s;
-        }
-        .card:hover { transform: translateY(-5px); }
-        .card h3 { color: var(--primary-color); margin-bottom: 1rem; }
-        .card p { color: var(--text-muted); }
+        /* --- Navigation --- */
+        nav { background-color: var(--white); padding: 1rem 2rem; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); border-bottom: 1px solid #ddd; display: flex; justify-content: space-between; align-items: center; position: fixed; top: 0; width: 100%; z-index: 1000; box-sizing: border-box; right: 0; }
+        .nav-logo { font-size: 2rem; font-weight: 700; color: var(--primary-color); text-decoration: none; }
+        .nav-links { display: flex; gap: 1rem; align-items: center; }
+        .nav-button { padding: 0.6rem 1.2rem; border-radius: var(--border-radius); text-decoration: none; font-weight: bold; transition: all 0.3s ease; border: 2px solid transparent; font-size: 0.9rem; }
+        .nav-button-search { background-color: transparent; color: var(--primary-color); border-color: var(--primary-color); }
+        .nav-button-search:hover { background-color: var(--primary-color); color: var(--white); }
+        .nav-button-excel { background-color: var(--primary-color); color: var(--white); }
+        .nav-button-excel:hover { background-color: var(--white); color: var(--primary-color); border-color: var(--primary-color); }
 
-        footer {
-            background: #2d3436;
-            color: #dfe6e9;
-            padding: 3rem 1rem;
-            text-align: center;
-        }
-        .mobile-nav-toggle { display: none; cursor: pointer; }
+        /* --- Mobile Navigation --- */
+        .mobile-nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 0; z-index: 1001; }
+        .hamburger-icon { width: 30px; height: 22px; fill: var(--secondary-color); }
+        .hamburger-icon rect { transition: all 0.3s ease-in-out; transform-origin: center; }
+        .mobile-nav-toggle.active .hamburger-icon rect:nth-of-type(1) { transform: translateY(15px) rotate(45deg); }
+        .mobile-nav-toggle.active .hamburger-icon rect:nth-of-type(2) { opacity: 0; }
+        .mobile-nav-toggle.active .hamburger-icon rect:nth-of-type(3) { transform: translateY(-15px) rotate(-45deg); }
+        .mobile-nav-menu { display: none; position: fixed; top: 68px; width: 100%; background-color: var(--white); box-shadow: 0 4px 10px rgba(0,0,0,0.1); flex-direction: column; z-index: 999; padding-top: 30px !important; align-items: center; right: 0; }
+        .mobile-nav-menu.active { display: flex; }
+        .mobile-nav-menu .nav-button { display: block; box-sizing: border-box; text-align: center; padding: 1rem; margin: 0.5rem auto; max-width: 170px; width: 100%; }
+
+        /* --- Main Layout & Ads --- */
+        .page-wrapper { display: flex; justify-content: center; padding: 85px 20px 0 20px; gap: 20px; }
+        .main-content { flex-grow: 1; max-width: 960px; }
+        .ad-vertical { width: 160px; flex-shrink: 0; margin-top: 2rem; }
+        .ad-vertical.left-ad { left: 35px; }
+        .ad-vertical.right-ad { right: 35px; }
+        .ad-horizontal { max-width: 728px; margin: 2rem auto; }
+        .main-content > .ad-horizontal:first-of-type { max-width: 860px; }
         
-        /* Subtle Link for Search Engines */
-        .crawler-path {
-            font-size: 0.65rem;
-            opacity: 0.3;
-            color: inherit;
-            text-decoration: none;
-            display: inline-block;
-            margin-top: 15px;
-        }
-        .crawler-path:hover { opacity: 0.6; }
+        #ad-horizontal-1, #ad-horizontal-2 { display: block !important; }
 
+        .vertical-ad-card { padding: 20px 15px; border-radius: var(--border-radius); box-shadow: var(--box-shadow); text-align: center; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .vertical-ad-card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.15); }
+        .vertical-ad-card .ad-icon { margin-bottom: 12px; }
+        .vertical-ad-card .ad-icon svg { width: 40px; height: 40px; }
+        .vertical-ad-card h5 { margin: 0 0 8px 0; font-size: 1rem; line-height: 1.3; }
+        .vertical-ad-card p { font-size: 0.75rem; line-height: 1.4; margin: 0 0 15px 0; opacity: 0.9; }
+        .vertical-ad-card .ad-cta { display: inline-block; padding: 8px 12px; border-radius: 5px; font-size: 0.8rem; font-weight: bold; transition: background-color 0.3s ease; }
+        .ad-vertical a { text-decoration: none; }
+        .barmga-db-ad { background: linear-gradient(145deg, #2c3e50, #34495e); color: var(--white); border: 1px solid #4a6278; }
+        .barmga-db-ad .ad-icon svg { fill: #e25a20; }
+        .barmga-db-ad .ad-cta { background-color: var(--primary-color); color: var(--white); }
+        .barmga-db-ad:hover .ad-cta { background-color: #c44a19; }
+        .wabarmga-wa-ad { background: linear-gradient(145deg, #E8F5E9, #FFFFFF); color: #1E8E3E; border: 1px solid #A5D6A7; position: relative; overflow: hidden; }
+        .wabarmga-wa-ad h5 { color: #1B5E20; }
+        .wabarmga-wa-ad p { color: #388E3C; }
+        .wabarmga-wa-ad .ad-icon svg { fill: #25D366; }
+        .wabarmga-wa-ad .ad-cta { background-color: #4CAF50; color: var(--white); }
+        .wabarmga-wa-ad:hover .ad-cta { background-color: #43A047; }
+        .wabarmga-wa-ad .ad-badge { position: absolute; top: -1px; background-color: #4CAF50; color: white; padding: 3px 10px; font-size: 0.7rem; font-weight: bold; left: -1px; right: auto; border-radius: 0 0 8px 0; }
+        .cta-ad-card { display: flex; align-items: center; gap: 1.5rem; padding: 1.5rem 2rem; background: var(--white); color: var(--dark-gray); border-radius: var(--border-radius); text-decoration: none; transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; box-shadow: var(--box-shadow); border: 1px solid #e1e8ed; }
+        .cta-ad-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.15); }
+        .cta-ad-icon svg { width: 48px; height: 48px; fill: var(--primary-color); }
+        .cta-ad-content { flex-grow: 1; text-align: right; }
+        .cta-ad-content h4 { margin: 0 0 0.25rem 0; font-size: 1.4rem; color: var(--secondary-color); }
+        .cta-ad-content p { margin: 0; font-size: 0.95rem; opacity: 0.9; }
+        .cta-ad-button { flex-shrink: 0; background-color: var(--primary-color); color: var(--white); padding: 0.8rem 1.5rem; border-radius: 5px; font-weight: bold; transition: background-color 0.3s; text-align: center; white-space: nowrap; }
+        .cta-ad-card:hover .cta-ad-button { background-color: #c44a19; }
+        .cta-ad-card.reversed-colors { background: linear-gradient(135deg, #e25a20, #c44a19); color: var(--white); border: none; }
+        .cta-ad-card.reversed-colors .cta-ad-icon svg { fill: var(--white); }
+        .cta-ad-card.reversed-colors .cta-ad-content h4 { color: var(--white); }
+        .cta-ad-card.reversed-colors .cta-ad-content p { color: var(--white); opacity: 0.9; }
+        .cta-ad-card.reversed-colors .cta-ad-button { background-color: var(--white); color: var(--primary-color); }
+        .cta-ad-card.reversed-colors:hover .cta-ad-button { background-color: #f0f0f0; }
+        .product-download-bar { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 1.2rem 1.5rem; background: linear-gradient(135deg, #fff5f0, #f8f9fa); border-radius: var(--border-radius); box-shadow: var(--box-shadow); margin-top: 1.5rem; border: 1px solid #f5dfd2; cursor: pointer; }
+        .product-download-bar p { margin: 0; font-size: 1rem; font-weight: 500; color: var(--secondary-color); }
+        .product-download-bar a { background-color: var(--primary-color); color: var(--white); padding: 0.6rem 1.2rem; border-radius: 5px; text-decoration: none; font-weight: bold; white-space: nowrap; transition: all 0.3s ease; }
+        .product-download-bar a:hover { background-color: #c44a19; transform: scale(1.05); }
+
+        /* --- Search Section --- */
+        .search-section { text-align: center; padding: 2rem 0; min-height: 15vh; display: flex; flex-direction: column; justify-content: center; box-sizing: border-box; padding-top: 40px; }
+        #search-form { display: flex; max-width: 100%; margin: 0 auto; box-shadow: var(--box-shadow); border-radius: var(--border-radius); }
+        #search-input { flex-grow: 1; padding: 1.8rem; font-size: 1.4rem; border: 1px solid #ccc; outline: none; transition: border-color 0.3s; border-radius: 0 var(--border-radius) var(--border-radius) 0; }
+        #search-input:focus { border-color: var(--primary-color); }
+        #search-form button { padding: 1.8rem 2.5rem; font-size: 1.4rem; font-weight: bold; color: var(--white); background-color: var(--primary-color); border: none; cursor: pointer; transition: background-color 0.3s; border-radius: var(--border-radius) 0 0 var(--border-radius); }
+        #search-form button:hover { background-color: #c44a19; }
+        #search-form button:disabled { background-color: #a9a9a9; cursor: not-allowed; }
+        #search-form .search-icon-mobile { display: none; width: 20px; height: 20px; fill: currentColor; }
+        .loader { border: 5px solid #f3f3f3; border-top: 5px solid var(--primary-color); border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite; margin: 20px auto 0; }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+        /* --- Results & Product View --- */
+        #results-container { margin-top: 2rem; margin-bottom: 2rem; }
+        .results-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; }
+        .result-card { background: var(--white); border-radius: var(--border-radius); box-shadow: var(--box-shadow); overflow: hidden; display: flex; flex-direction: column; transition: transform 0.2s, box-shadow 0.2s; text-decoration: none; color: inherit; }
+        .result-card:hover { transform: translateY(-5px); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); }
+        .result-card img { width: 100%; height: 200px; object-fit: cover; }
+        .result-card-content { padding: 1rem; flex-grow: 1; display: flex; flex-direction: column; }
+        .result-card-content h3 { margin-top: 0; font-size: 1.2rem; }
+        .result-card-content p { font-size: 0.9rem; color: #7f8c8d; flex-grow: 1; }
+        .details-btn { padding: 0.6rem 1.2rem; background-color: var(--primary-color); color: var(--white); border: none; border-radius: 5px; cursor: pointer; font-weight: bold; text-align: center; transition: background-color 0.3s; display: inline-block; margin-top: 0.5rem; align-self: flex-start; }
+        .full-product-view { background: var(--white); padding: 2rem; border-radius: var(--border-radius); box-shadow: var(--box-shadow); }
+        .product-layout { display: grid; grid-template-columns: 1fr; gap: 2rem; }
+        .product-layout img { max-width: 100%; height: auto; border-radius: var(--border-radius); }
+        .product-info h2 { margin-top: 0; font-size: 2.5rem; }
+        .product-info .brand { font-size: 1.2rem; color: #7f8c8d; margin-top: -1.5rem; margin-bottom: 1.5rem; }
+        .product-info .price:not(small) { font-size: 2rem; font-weight: bold; color: var(--primary-color); margin-bottom: 1rem; }
+        .product-info .details p { margin: 0.5rem 0; }
+        .product-info .details strong { color: var(--secondary-color); }
+        .no-results { text-align: center; padding: 2rem; color: #7f8c8d; font-size: 1.2rem; }
+
+        /* --- Modals & Load More --- */
+        .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); z-index: 2000; justify-content: center; align-items: center; padding: 20px; box-sizing: border-box; }
+        .modal-content { background-color: var(--white); padding: 2rem; border-radius: var(--border-radius); box-shadow: 0 5px 25px rgba(0,0,0,0.3); max-width: 500px; width: 100%; position: relative; text-align: center; animation: fadeInModal 0.3s ease-out; }
+        @keyframes fadeInModal { from { opacity: 0; transform: scale(0.9); } to { opacity: 1; transform: scale(1); } }
+        .modal-cover-image { width: 100%; height: auto; max-height: 150px; object-fit: cover; border-radius: var(--border-radius) var(--border-radius) 0 0; margin: -2rem -2rem 1.5rem -2rem; }
+        .modal-content h2 { color: var(--secondary-color); margin-top: 0; margin-bottom: 1rem; font-size: 1.8rem; }
+        .modal-content p { color: var(--dark-gray); margin-bottom: 2rem; font-size: 1rem; line-height: 1.6; }
+        .modal-action-btn { display: inline-block; background-color: var(--primary-color); color: var(--white); padding: 0.8rem 2rem; border-radius: 5px; text-decoration: none; font-weight: bold; transition: background-color 0.3s; }
+        .modal-action-btn:hover { background-color: #c44a19; }
+        .modal-close-btn { position: absolute; top: 15px; background: rgba(0, 0, 0, 0.5); color: white; border: none; border-radius: 50%; width: 32px; height: 32px; font-size: 1.5rem; font-weight: bold; cursor: pointer; transition: background-color 0.3s; display: flex; align-items: center; justify-content: center; line-height: 1; padding: 0; z-index: 10; left: 15px; }
+        .modal-close-btn:hover { background-color: rgba(0, 0, 0, 0.8); color: white; }
+        .load-more-container { text-align: center; margin-top: 1.5rem; }
+        .load-more-btn { background-color: transparent; color: var(--primary-color); border-color: var(--primary-color); border-radius: var(--border-radius); padding: 0.8rem 1.8rem; font-size: 1.1rem; font-weight: bold; cursor: pointer; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.5rem; }
+        .load-more-btn:hover { background-color: var(--primary-color); color: var(--white); box-shadow: 0 6px 15px rgba(226, 90, 32, 0.5); }
+        .premium-logo-svg { width: 24px; height: 24px; fill: currentColor; }
+
+        /* --- Footer --- */
+        footer { margin-top: 100px; text-align: center; padding: 2rem; background-color: var(--secondary-color); color: var(--light-gray); }
+        footer p { margin: 0.5rem 0; font-size: 0.9rem; }
+        footer a { color: var(--primary-color); text-decoration: none; font-weight: bold; }
+        footer a:hover { text-decoration: underline; }
+
+        /* --- Responsive Design --- */
+        @media (min-width: 1330px) { .ad-vertical { position: fixed !important; } }
+        @media (max-width: 1200px) { .ad-vertical { display: none; } }
+        @media (min-width: 850px) { #search-input { min-width: 600px; } }
+        @media (min-width: 530px) and (max-width: 850px) { #search-input { min-width: 400px; } }
+        @media (min-width: 768px) {
+            .full-product-view { padding: 3rem; }
+            .product-layout { grid-template-columns: 1fr 300px; gap: 3rem; }
+        }
         @media (max-width: 768px) {
             .nav-links { display: none; }
-            .hero h1 { font-size: 1.8rem; }
-            .search-form { flex-direction: column; border-radius: 15px; background: transparent; box-shadow: none; gap: 10px; }
-            .search-form input { border-radius: 10px; width: 100%; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-            .search-form button { border-radius: 10px; width: 100%; padding: 15px; }
-            .mobile-nav-toggle {
-        display: block; /* This makes it visible on small screens */
-        font-size: 1.5rem;
-        color: var(--primary-color);
-        cursor: pointer;
-    }
-    .nav-links {
-        display: none; /* Hidden by default on mobile */
-        flex-direction: column;
-        position: absolute;
-        top: 70px;
-        right: 0;
-        width: 100%;
-        background: var(--white);
-        padding: 1rem;
-        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-        text-align: center;
-    }
-
-    /* This class will be added via JavaScript to show the menu */
-    .nav-links.active {
-        display: flex;
-    }
+            .mobile-nav-toggle { display: block; }
+            .product-download-bar { flex-direction: column; text-align: center; }
+            .cta-ad-card { flex-direction: column; text-align: center; }
+            .cta-ad-content { text-align: center; }
+            .cta-ad-button { margin-top: 1rem; width: 100%; box-sizing: border-box; }
         }
+        @media (max-width: 600px) {
+            nav { padding: 1rem; }
+            .nav-logo { font-size: 1.5rem; }
+            #search-form button { padding: 1.2rem; display: grid; place-content: center; }
+            #search-form .search-text-desktop { display: none; }
+            #search-form .search-icon-mobile { display: block; }
+            .product-info h2 { font-size: 2rem; }
+            .modal-content { padding: 1.5rem; }
+            .modal-cover-image { margin: -1.5rem -1.5rem 1rem -1.5rem; }
+            .modal-content h2 { font-size: 1.5rem; }
+        }
+        @media (max-width: 400px) { #search-input { max-width: 230px; } }
+        @media (max-width: 360px) { #search-input { max-width: 180px; } }
+
+        /* ==========================================
+           MODERN HERO & SEARCH: RESPONSIVE PATCHES
+           ========================================== */
+        .hero-modern {
+            background: linear-gradient(135deg, #e25a20 0%, #ff8c52 100%);
+            color: var(--white);
+            padding: 5rem 1.5rem;
+            text-align: center;
+            margin-top: 73px; /* Safely accounts for sticky nav */
+            box-sizing: border-box;
+        }
+        .hero-modern h1 { font-size: 2.5rem; margin-top: 0; margin-bottom: 1rem; font-weight: 800; color: var(--white); line-height: 1.3; }
+        .hero-modern p { font-size: 1.15rem; opacity: 0.95; max-width: 700px; margin: 0 auto 2.5rem; line-height: 1.6; }
+        .search-container-modern { max-width: 600px; margin: 0 auto; width: 100%; box-sizing: border-box; }
+        
+        /* FIX: Corrected flex-direction flow and sizing properties to ensure mobile fluidity */
+        .search-form-modern { 
+            display: flex; 
+            background: var(--white); 
+            padding: 6px; 
+            border-radius: 50px; 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15); 
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .search-form-modern input { 
+            flex: 1; 
+            border: none; 
+            padding: 15px 25px; 
+            border-radius: 50px; 
+            font-size: 1.1rem; 
+            outline: none; 
+            font-family: 'Cairo', sans-serif;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .search-form-modern button { 
+            background: var(--primary-color); 
+            color: var(--white); 
+            border: none; 
+            padding: 12px 35px; 
+            border-radius: 50px; 
+            font-weight: bold; 
+            cursor: pointer; 
+            transition: background 0.3s; 
+            font-size: 1rem; 
+            white-space: nowrap;
+        }
+        .search-form-modern button:hover { background: #c44a19; }
+
+        .section-features { max-width: 1200px; margin: 3rem auto; padding: 0 1rem; box-sizing: border-box; }
+        .grid-features { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+        .card-feature { background: var(--white); padding: 2.5rem 1.5rem; border-radius: 15px; text-align: center; box-shadow: var(--box-shadow); transition: transform 0.3s; box-sizing: border-box; }
+        .card-feature:hover { transform: translateY(-5px); }
+        .card-feature .icon { font-size: 2.5rem; display: block; margin-bottom: 1rem; }
+        .card-feature h3 { color: var(--primary-color); margin-top: 0; margin-bottom: 1rem; font-size: 1.4rem; }
+        .card-feature p { color: var(--dark-gray); margin: 0; font-size: 0.95rem; }
+
+        /* Conditional Layout View State Engine triggers */
+        body.is-searching .hero-modern,
+        body.is-searching .section-features {
+            display: none !important;
+        }
+        body.is-searching .page-wrapper {
+            display: flex !important;
+            padding-top: 85px;
+        }
+        body.is-searching .search-section {
+            display: block !important;
+        }
+
+        body:not(.is-searching) .search-section { display: none !important; }
+        body:not(.is-searching) .ad-vertical { display: none !important; }
+        body:not(.is-searching) .page-wrapper { padding-top: 0px; }
+
+        /* MOBILE FIXES RESPONSIVE MEDIA BREAKPOINT */
+        @media (max-width: 768px) {
+            .hero-modern { padding: 3.5rem 1rem 4rem 1rem; margin-top: 68px; }
+            .hero-modern h1 { font-size: 1.8rem; }
+            .hero-modern p { font-size: 1rem; margin-bottom: 2rem; }
+            
+            /* Converts bar to vertical linear stack layout structure elegantly */
+            .search-form-modern { 
+                flex-direction: column; 
+                border-radius: 12px; 
+                background: transparent; 
+                box-shadow: none; 
+                gap: 12px; 
+                padding: 0; 
+            }
+            .search-form-modern input { 
+                border-radius: 8px; 
+                width: 100%; 
+                box-shadow: 0 4px 12px rgba(0,0,0,0.08); 
+                padding: 16px;
+                text-align: center;
+            }
+            .search-form-modern button { 
+                border-radius: 8px; 
+                width: 100%; 
+                padding: 16px; 
+                font-size: 1.1rem;
+            }
+        }
+        @media (max-width: 768px) {
+    .search-form-modern .modern-submit-btn { 
+        background: transparent !important; 
+        color: #ffffff !important; 
+        border: 2px solid #ffffff !important; 
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important; 
+        font-weight: bold !important;
+        border-radius: 8px !important; 
+        width: 100% !important; 
+        padding: 16px !important; 
+        font-size: 1.1rem !important;
+        max-width: 150px !important;
+        margin-right: auto !important;
+        margin-left: auto !important;
+    }
+}
     </style>
 </head>
 <body>
-
-    <nav>
-        <a href="/" class="logo">COBOUN</a>
-        <div class="nav-links">
-            <a href="https://coboun.com">الرئيسية</a>
-            <a href="https://barmga.com/ar?category=7" target="_blank">قاعدة البيانات</a>
+    
+    <div id="ar-content">
+        <nav dir="ltr">
+            <a href="https://coboun.com/" class="nav-logo">
+                <img src="https://coboun.com/img/logo.webp" alt="كوبون" class="logo-img">
+                <span>كوبون</span>
+            </a>
+            <div class="nav-links">
+                <a onclick="if(document.body.classList.contains('is-searching')){ window.scrollTo({ top: document.querySelector('#ar-content .search-section').getBoundingClientRect().top + window.scrollY - 60, behavior: 'smooth' }); } else { document.getElementById('search-input-modern').focus(); }" class="nav-button nav-button-search">ابحث عن منتج</a>
+                <a href="https://barmga.com/ar?category=7" class="nav-button nav-button-excel" target="_blank" rel="noopener noreferrer">قواعد البيانات</a>
+            </div>
+            <button class="mobile-nav-toggle" aria-label="تبديل التنقل">
+                <svg class="hamburger-icon" viewBox="20 0 80 80"><rect width="100" height="15" rx="8"></rect><rect y="30" width="100" height="15" rx="8"></rect><rect y="60" width="100" height="15" rx="8"></rect></svg>
+            </button>
+        </nav>
+        <div class="mobile-nav-menu">
+            <a onclick="if(document.body.classList.contains('is-searching')){ window.scrollTo({ top: document.querySelector('#ar-content .search-section').getBoundingClientRect().top + window.scrollY - 60, behavior: 'smooth' }); } else { document.getElementById('search-input-modern').focus(); };document.querySelector('#ar-content .mobile-nav-menu.active').classList.remove('active');document.querySelector('#ar-content .mobile-nav-toggle.active').classList.remove('active')" class="nav-button nav-button-search">ابحث عن منتج</a>
+            <a href="https://barmga.com/ar?category=7" onclick=";document.querySelector('#ar-content .mobile-nav-menu.active').classList.remove('active');document.querySelector('#ar-content .mobile-nav-toggle.active').classList.remove('active')" class="nav-button nav-button-excel" target="_blank" rel="noopener noreferrer">قاعدة بيانات</a>
         </div>
-        <div class="mobile-nav-toggle">☰</div>
-    </nav>
 
-    <section class="hero">
-        <div class="container">
-            <h1>دليل الباركود والمنتجات في السعودية</h1>
-            <p>ابحث عن تفاصيل أي منتج: صور، أسعار، باركود والمزيد! تصفح أكبر قاعدة بيانات للمنتجات المعروضة في السوق السعودي.</p>
+        <section class="hero-modern">
+            <div class="container">
+                <h1>دليل الباركود والمنتجات في السعودية</h1>
+                <p>ابحث عن تفاصيل أي منتج: صور، أسعار، باركود والمزيد! تصفح أكبر قاعدة بيانات للمنتجات المعروضة في السوق السعودي.</p>
+                <div class="search-container-modern">
+                    <form id="search-form-modern" class="search-form-modern">
+                        <input type="text" id="search-input-modern" placeholder="أدخل اسم المنتج أو رقم الباركود..." required>
+                        <button type="submit" class="modern-submit-btn">بحث سريع</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-wrapper">
+            <aside class="ad-vertical left-ad" data-nosnippet>
+                <a href="https://barmga.com/ar#products" target="_blank" rel="noopener noreferrer">
+                    <div class="vertical-ad-card barmga-db-ad">
+                        <div class="ad-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5,4H19A2,2 0 0,1 21,6V18A2,2 0 0,1 19,20H5A2,2 0 0,1 3,18V6A2,2 0 0,1 5,4M5,8V12H19V8H5M5,14V18H19V14H5Z" /></svg>
+                        </div>
+                        <h5 style="color: white !important;">قواعد بيانات التجارة الإلكترونية و B2B</h5>
+                        <p>عزز أعمالك ببيانات المنتجات والتسويق الجاهزة للاستخدام.</p>
+                        <span class="ad-cta">استكشف الآن</span>
+                    </div>
+                </a>
+            </aside>
             
-            <div class="search-container">
-                <form id="search-form" class="search-form">
-                    <input type="text" id="search-input" placeholder="أدخل اسم المنتج أو رقم الباركود..." required>
-                    <button type="submit">بحث سريع</button>
-                </form>
+            <div class="main-content">
+                <main class="section-features">
+                    <div class="grid-features">
+                        <div class="card-feature">
+                            <span class="icon">🔍</span>
+                            <h3>بيانات دقيقة</h3>
+                            <p>نوفر معلومات مفصلة تشمل الاسم التجاري، الأسعار، الصور والباركود لمختلف المنتجات المستخرجة من كبرى المتاجر السعودية.</p>
+                        </div>
+                        <div class="card-feature">
+                            <span class="icon">📦</span>
+                            <h3>إكمال معلومات المنتجات</h3>
+                            <p>هل لديك منتجات بدون صور أو أوصاف؟ استخدم محركنا لإيجاد البيانات المفقودة لأكثر من 500 ألف منتج وإضافتها لمتجرك فوراً.</p>
+                        </div>
+                        <div class="card-feature">
+                            <span class="icon">📈</span>
+                            <h3>تحسين السيو (SEO)</h3>
+                            <p>ارفع جودة متجرك ببيانات احترافية تساعد محركات البحث على أرشفة منتجاتك بسهولة، مما يضمن وصول الزبائن لمتجرك بشكل أسرع.</p>
+                        </div>
+                    </div>
+                </main>
+
+                <main>
+                    <section class="search-section">
+                        <div class="container">
+                            <h1>ابحث عن معلومات المنتج فوراً</h1>
+                            <p style="padding-bottom:20px;">ابحث باسم المنتج أو الباركود للحصول على معلومات مفصلة.</p>
+                            <form id="search-form" dir="ltr">
+                                <button type="submit" title="بحث">
+                                    <svg class="search-icon-mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                                    <span class="search-text-desktop">بحث</span>
+                                </button>
+                                <input dir="rtl" type="text" id="search-input" placeholder="اسم المنتج أو الباركود..." required>
+                            </form>
+                            <div id="loader" class="loader" style="display: none;"></div>
+                        </div>
+                    </section>
+                    <section class="results-section">
+                        <div class="container">
+                            <div id="results-container"></div>
+                            <div id="load-more-container" class="load-more-container"></div>
+                        </div>
+                    </section>
+                </main>
+
+                <div class="ad-horizontal" id="ad-horizontal-1">
+                    <a href="https://barmga.com/ar?category=7" target="_blank" rel="noopener noreferrer" class="cta-ad-card">
+                        <div class="cta-ad-icon">
+                            <img src="https://coboun.com/img/excelfilex.webp" alt="excel" style="width:48px;height:48px;">
+                        </div>
+                        <div class="cta-ad-content">
+                            <h4>عزز متجرك الإلكتروني</h4>
+                            <p>احصل على أكثر من 500,000 منتج في ملفات Excel جاهزة للاستخدام على Barmga.com</p>
+                        </div>
+                        <div class="cta-ad-button" style="background-color: #25aa82 !important;">
+                            ابحث عن قواعد البيانات
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="ad-horizontal" id="ad-horizontal-2">
+                    <a href="https://barmga.com/blog/ecommerce-seo-strategy-big-data-ar" target="_blank" rel="noopener noreferrer" class="cta-ad-card reversed-colors">
+                        <div class="cta-ad-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M17,18C15.89,18 15,18.89 15,20A2,2 0 0,0 17,22A2,2 0 0,0 19,20C19,18.89 18.1,18 17,18M7,18C5.89,18 5,18.89 5,20A2,2 0 0,0 7,22A2,2 0 0,0 9,20C9,18.89 8.1,18 7,18M7.2,14.63L7.17,14.75C7.17,14.89 7.28,15 7.42,15H19V17H7C5.89,17 5,16.1 5,15C5,14.65 5.09,14.32 5.24,14.04L6.6,11.59L3,4H1V2H4.27L5.21,4H20A1,1 0 0,1 21,5C21,5.17 20.95,5.34 20.88,5.5L17.3,11.97C16.96,12.58 16.3,13 15.55,13H8.1L7.2,14.63Z"></path>
+                            </svg>
+                        </div>
+
+                        <div class="cta-ad-content">
+                            <h4>تصدر نتائج بحث جوجل بذكاء</h4>
+                            <p>أرشفة آلاف المنتجات تضاعف فرص ظهورك وتجذب زيارات أكثر.</p>
+                        </div>
+                        <div class="cta-ad-button">إقرأ التفاصيل</div>
+                    </a>
+                </div>
+            </div>
+
+            <aside class="ad-vertical right-ad" data-nosnippet>
+                <a href="https://barmga.com/wabarmga-whatsapp-sender-ar" target="_blank" rel="noopener noreferrer">
+                    <div class="vertical-ad-card wabarmga-wa-ad">
+                        <div class="ad-badge">مجاني</div>
+                        <div class="ad-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.01 21L23 12L2.01 3L2 10L17 12L2 14L2.01 21Z" /></svg>
+                        </div>
+                        <h5>أتمتة واتساب مجانية</h5>
+                        <p>أرسل رسائل جماعية مباشرة من جهاز الكمبيوتر الخاص بك. بلا حدود، مجاني تمامًا!</p>
+                        <span class="ad-cta">حمّل الآن</span>
+                    </div>
+                </a>
+            </aside>
+        </div>
+
+        <footer>
+            <div class="container">
+                <p>Copyright &copy; 2026 coboun.com - جميع الحقوق محفوظة</p>
+                <p>Powered by <a href="https://barmga.com/ar" target="_blank" rel="noopener noreferrer">Barmga</a></p>
+            </div>
+        </footer>
+
+        <div id="premium-modal-overlay" class="modal-overlay">
+            <div class="modal-content">
+                <button class="modal-close-btn">&times;</button>
+                <img src="https://coboun.com/img/adcover.jpg" alt="Premium Databases Cover" class="modal-cover-image">
+                <h2>أطلق العنان لإمكانيات تجارتك الإلكترونية</h2>
+                <p>عزز متجرك! احصل على وصول فوري إلى قواعد بيانات Excel تحتوي على آلاف المنتجات الجاهزة للاستيراد.</p>
+                <a href="https://barmga.com/ar?category=7" target="_blank" class="modal-action-btn">عرض قواعد بيانات المنتجات</a>
             </div>
         </div>
-    </section>
-<main class="section">
-        <div class="grid-features">
-            <div class="card">
-                <span class="icon">🔍</span>
-                <h3>بيانات دقيقة</h3>
-                <p>نوفر معلومات مفصلة تشمل الاسم التجاري، الأسعار، الصور والباركود لمختلف المنتجات المستخرجة من كبرى المتاجر السعودية.</p>
-            </div>
+    </div>
 
-            <div class="card">
-                <span class="icon">📦</span>
-                <h3>إكمال معلومات المنتجات</h3>
-                <p>هل لديك منتجات بدون صور أو أوصاف؟ استخدم محركنا لإيجاد البيانات المفقودة لأكثر من 500 ألف منتج وإضافتها لمتجرك فوراً.</p>
-            </div>
-
-            <div class="card">
-                <span class="icon">📈</span>
-                <h3>تحسين السيو (SEO)</h3>
-                <p>ارفع جودة متجرك ببيانات احترافية تساعد محركات البحث على أرشفة منتجاتك بسهولة، مما يضمن وصول الزبائن لمتجرك بشكل أسرع.</p>
-            </div>
-        </div>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 Coboun.com - جميع الحقوق محفوظة</p>
-        <p style="font-size: 0.8rem; margin-top: 10px; opacity: 0.6;">دليل الباركود والمنتجات في السعودية</p>
-        
-        <!-- Invisible/Subtle link for SEO crawlers only -->
-        <a href="/sitemap-1.html" class="crawler-path" style="display: none;">فهرس المنتجات</a>
-    </footer>
 
     <script>
     document.addEventListener('DOMContentLoaded', function() {
         // Search Redirection to main domain
-        const searchForm = document.getElementById('search-form');
+        const searchForm = document.getElementById('search-form-modern');
         if(searchForm) {
             searchForm.onsubmit = function(e) {
                 e.preventDefault();
-                const query = document.getElementById('search-input').value.trim();
+                const query = document.getElementById('search-input-modern').value.trim();
                 if(query) {
                     window.location.href = 'https://coboun.com/?query=' + encodeURIComponent(query);
                 }
@@ -274,25 +560,31 @@
 
 
     });
-    document.addEventListener('DOMContentLoaded', function() {
-    const toggle = document.querySelector('.mobile-nav-toggle');
-    const navLinks = document.querySelector('.nav-links');
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+    const mobileNavMenu = document.querySelector('.mobile-nav-menu');
 
-    if(toggle && navLinks) {
-        // 1. Toggle the menu when the hamburger icon is clicked
-        toggle.onclick = function() {
-            navLinks.classList.toggle('active');
-        };
+    if (mobileNavToggle && mobileNavMenu) {
+        // Toggle menu visibility on hamburger click
+        mobileNavToggle.addEventListener('click', () => {
+            mobileNavToggle.classList.toggle('active');
+            mobileNavMenu.classList.toggle('active');
+        });
 
-        // 2. Hide the menu when any link inside it is clicked
-        navLinks.querySelectorAll('a').forEach(link => {
-            link.onclick = function() {
-                navLinks.classList.remove('active');
-            };
+        // Close the menu automatically when any link inside it is clicked
+        mobileNavMenu.querySelectorAll('a').forEach(link => {
+            // Only attach if it's a standard link (not custom onclick links that handle it themselves)
+            if (!link.getAttribute('onclick')) {
+                link.addEventListener('click', () => {
+                    mobileNavToggle.classList.remove('active');
+                    mobileNavMenu.classList.remove('active');
+                });
+            }
         });
     }
-
 });
+
     </script>
+    <img src="https://bit.ly/cobountrc" style="display:none;">
 </body>
 </html>
